@@ -1,12 +1,12 @@
-class Climssh < Formula
-  desc "Interactive CLI tool to manage SSH config and keys"
+class Mssh < Formula
+  desc "SSH Host & Key Manager CLI"
   homepage "https://github.com/odrwz/CLImssh"
-  head "https://github.com/odrwz/CLImssh.git", branch: "main"
-
-  depends_on "go" => :build
+  url "https://raw.githubusercontent.com/odrwz/CLImssh/main/climssh"
+  sha256 "4c911f120e53b4bfaae0ce9dde0729ff95e18fa283aa0b76b56c3ac86809135b"
+  version "2.0.0"
 
   def install
-    system "go", "build", "-o", bin/"climssh", "."
+    bin.install "climssh"
   end
 
   test do
