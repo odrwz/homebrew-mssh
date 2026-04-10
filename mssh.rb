@@ -1,9 +1,9 @@
 class Mssh < Formula
   desc "SSH Host & Key Manager CLI"
   homepage "https://github.com/odrwz/mssh"
-  url "https://raw.githubusercontent.com/odrwz/mssh/main/mssh?v=2.1.1"
-  sha256 "fd3899c2f0d990f2a8e948af7785657c6e3d89283c5f43d3b31978bb45e3a955"
-  version "2.1.1"
+  url "https://raw.githubusercontent.com/odrwz/mssh/main/mssh?v=2.1.2"
+  sha256 "8cf237d59916bc8346f4237ebf0c63aa5fa5afa6f4a9f21d53af89986e75bbee"
+  version "2.1.2"
 
   def install
     bin.install "mssh"
